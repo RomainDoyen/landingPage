@@ -1,0 +1,20 @@
+import Header from "../components/ui/Header";
+import BannerWelcome from "../components/ui/BannerWelcome";
+import TrendingGames from "../components/ui/TrendingGames";
+import "../styles/Home.css";
+
+export default function Home() {
+    return (
+        <div className="home-container">
+            <div className="home-content">
+               <Header /> 
+            </div>
+            <div className="home-banner">
+                <BannerWelcome />
+            </div>
+            <div className="home-cards">
+                <TrendingGames />
+            </div>
+        </div>
+    )
+}

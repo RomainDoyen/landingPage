@@ -1,0 +1,54 @@
+.trending-games {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.trending-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.trending-header h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+.see-more-link {
+    color: #98daeb;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.see-more-link:hover {
+    text-decoration: underline;
+}
+
+.trending-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.trending-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.trending-cards::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 4px;
+}
+
+.trending-cards::-webkit-scrollbar-thumb {
+    background: #98daeb;
+    border-radius: 4px;
+}
+
+.trending-cards::-webkit-scrollbar-thumb:hover {
+    background: #7bc8d9;
+}

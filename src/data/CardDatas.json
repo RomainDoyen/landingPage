@@ -1,0 +1,34 @@
+{
+    "cards": [
+        {
+            "title": "Card 1",
+            "description": "Description 1",
+            "image": "https://placehold.co/400"
+        },
+        {
+            "title": "Card 2",
+            "description": "Description 2",
+            "image": "hhttps://placehold.co/400"
+        },
+        {
+            "title": "Card 3",
+            "description": "Description 3",
+            "image": "https://placehold.co/400"
+        },
+        {
+            "title": "Card 4",
+            "description": "Description 4",
+            "image": "https://placehold.co/400"
+        },
+        {
+            "title": "Card 5",
+            "description": "Description 5",
+            "image": "https://placehold.co/400"
+        },
+        {
+            "title": "Card 6",
+            "description": "Description 6",
+            "image": "https://placehold.co/400"
+        }
+    ]
+}
