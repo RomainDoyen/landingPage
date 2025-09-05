@@ -3,6 +3,7 @@ import "../../styles/Header.css"
 import Input from "./Input"
 import { SearchIcon } from "lucide-react"
 import Image from "./Image"
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     return (
@@ -12,10 +13,13 @@ export default function Header() {
                     <Image src={banner} alt="Hero Image" />
                 </div>
                 <nav className="nav-container">
+                    <div className="site-title">
+                        <Link to="/">Backlog974</Link> 
+                      </div>
                     <div className="nav-links">
                         <a href="#">Login</a>
                         <a href="#">Register</a>
-                        <a href="#">Game</a>
+                       <Link to="/games">Games</Link>
                         <Input 
                             type="text" 
                             placeholder="Search" 
