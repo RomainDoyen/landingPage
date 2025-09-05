@@ -1,8 +1,4 @@
-interface ImageProps {
-    src: string;
-    alt: string;
-    className?: string;
-}
+import type { ImageProps } from "../../types/types";
 
 export default function Image({ src, alt, className }: ImageProps) {
     return (

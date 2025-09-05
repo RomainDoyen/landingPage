@@ -1,11 +1,6 @@
 import "../../styles/Button.css"
 
-interface ButtonProps {
-    text: string;
-    color: string;
-    backgroundColor: string;
-    link: string;
-}
+import type { ButtonProps } from "../../types/types";
 
 export default function Button({ text, color, backgroundColor, link }: ButtonProps) {
     return (

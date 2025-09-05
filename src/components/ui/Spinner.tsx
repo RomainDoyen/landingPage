@@ -1,9 +1,5 @@
 import '../../styles/Spinner.css';
-
-interface SpinnerProps {
-    size?: 'small' | 'medium' | 'large';
-    color?: string;
-}
+import type { SpinnerProps } from "../../types/types";
 
 export default function Spinner({ size = 'medium', color = '#007bff' }: SpinnerProps) {
     const spinnerSize = {

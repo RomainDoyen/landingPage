@@ -1,11 +1,5 @@
 import '../../styles/Compteur.css';
-
-interface CompteurProps {
-    title: string;
-    value: number;
-    valueMetrics: string;
-    pastilleColor: string;
-}
+import type { CompteurProps } from "../../types/types";
 
 export default function Compteur({ title, value, valueMetrics, pastilleColor }: CompteurProps) {
     return (

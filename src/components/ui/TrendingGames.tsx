@@ -3,14 +3,7 @@ import GameCard from "./Card"
 import { getAll } from "../../api/Services";
 import { useState, useEffect } from "react";
 import Spinner from "./Spinner";
-
-// Interface pour typer les données de jeu
-interface Game {
-    id: number;
-    name: string;
-    background_image: string;
-    rating: number;
-}
+import type { Game } from "../../types/types";
 
 export default function TrendingGames() {
     const [trendingGames, setTrendingGames] = useState<Game[]>([]);

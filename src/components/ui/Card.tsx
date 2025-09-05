@@ -1,10 +1,6 @@
 import "../../styles/Card.css"
 import Image from "./Image"
-
-interface CardProps {
-    title: string;
-    image: string;
-}
+import type { CardProps } from "../../types/types";
 
 export default function Card({ title, image }: CardProps) {
     return (

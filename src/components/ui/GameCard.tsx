@@ -1,11 +1,6 @@
 import "../../styles/GameCard.css"
 import Image from "./Image"
-
-interface GameCardProps {
-    title: string;
-    image: string;
-    description?: string;
-}
+import type { GameCardProps } from "../../types/types";
 
 export default function GameCard({ title, image, description }: GameCardProps) {
     return (
