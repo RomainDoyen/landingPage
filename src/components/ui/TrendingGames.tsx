@@ -2,6 +2,7 @@ import "../../styles/TrendingGames.css"
 import GameCard from "./Card"
 import { getAll } from "../../api/Services";
 import { useState, useEffect } from "react";
+import Spinner from "./Spinner";
 
 // Interface pour typer les données de jeu
 interface Game {
@@ -46,8 +47,8 @@ export default function TrendingGames() {
                     <h2>Recently trending</h2>
                     <a href="/trending" className="see-more-link">See More</a>
                 </div>
-                <div className="trending-cards">
-                    <p>Chargement...</p>
+                <div className="trending-cards trending-cards-loading">
+                    <Spinner />
                 </div>
             </div>
         );
@@ -95,7 +96,7 @@ export default function TrendingGames() {
             </div>
             <div className="trending-cards">
                 {trendingGames && trendingGames.length > 0 ? (
-                    trendingGames.map((game) => (
+                    trendingGames.slice(0, 6).map((game) => (
                         <GameCard 
                             key={game.id}
                             title={game.name}
