@@ -1,5 +1,5 @@
 import Header from "../components/ui/Header";
-import BannerWelcome from "../components/ui/BannerWelcome";
+// import BannerWelcome from "../components/ui/BannerWelcome";
 import TrendingGames from "../components/ui/TrendingGames";
 import "../styles/Home.css";
 

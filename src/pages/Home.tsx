@@ -2,6 +2,7 @@ import Header from "../components/ui/Header";
 import BannerWelcome from "../components/ui/BannerWelcome";
 import TrendingGames from "../components/ui/TrendingGames";
 import "../styles/Home.css";
+import Footer from "../components/ui/Footer";
 
 export default function Home() {
     return (
@@ -14,6 +15,9 @@ export default function Home() {
             </div>
             <div className="home-cards">
                 <TrendingGames />
+            </div>
+            <div className="home-footer">
+                <Footer />
             </div>
         </div>
     )
