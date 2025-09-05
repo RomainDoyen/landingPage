@@ -5,7 +5,7 @@ import Compteur from "./Compteur"
 export default function BannerWelcome() {
     return (
         <div className="banner-welcome">
-            <h1>Welcome to the game</h1>
+            <h1>APEX Games</h1>
             <h5>Discover, collect, analyze your games</h5>
             <div className="metrics">
                 <Compteur title="Played" value={42.7} valueMetrics="M" pastilleColor="#EA377A" />
