@@ -13,6 +13,9 @@ export default function Header() {
                     <Image src={banner} alt="Hero Image" />
                 </div>
                 <nav className="nav-container">
+                    <div className="site-title">
+                        <Link to="/">Backlog974</Link> 
+                      </div>
                     <div className="nav-links">
                         <a href="#">Login</a>
                         <a href="#">Register</a>
