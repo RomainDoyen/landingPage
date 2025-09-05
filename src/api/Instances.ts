@@ -1,22 +1,34 @@
-import axios from "axios";
+import axios from 'axios';
+import { config } from '../config/env';
 
-export const key = import.meta.env.VITE_RAWG_API_KEY;
-
+// Configuration de l'instance axios
 const axiosInstance = axios.create({
-    baseURL: "/api",
+    baseURL: 'https://api.rawg.io/api',
+    timeout: 10000,
     headers: {
-        "Content-Type": "application/json"
-    }
+        'Content-Type': 'application/json',
+    },
 });
 
-// Intercepteur pour ajouter la clé API comme paramètre de requête
-axiosInstance.interceptors.request.use((config) => {
-    if (key) {
-        config.params = { ...config.params, key };
-    } else {
-        console.warn("VITE_RAWG_API_KEY n'est pas définie dans le fichier .env");
+// Intercepteur pour ajouter la clé API à chaque requête
+axiosInstance.interceptors.request.use(
+    (requestConfig) => {
+        // Vérifier si la clé API est disponible
+        if (!requestConfig.params) {
+            requestConfig.params = {};
+        }
+        
+        if (config.RAWG_API_KEY) {
+            requestConfig.params.key = config.RAWG_API_KEY;
+        } else {
+            throw new Error("Clé API RAWG manquante. Vérifiez votre fichier .env");
+        }
+        
+        return requestConfig;
+    },
+    (error) => {
+        return Promise.reject(error);
     }
-    return config;
-});
+);
 
 export default axiosInstance;

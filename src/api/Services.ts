@@ -1,8 +1,7 @@
-import axiosInstance from "./Instances";
+import axiosInstance from "./Instances.ts";
 
 export const getAll = async (url: string) => {
     const response = await axiosInstance.get(url);
-    console.log(response.data);
     return response.data;
 };
 

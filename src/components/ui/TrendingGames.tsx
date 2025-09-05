@@ -2,7 +2,6 @@ import "../../styles/TrendingGames.css"
 import GameCard from "./Card"
 import { getAll } from "../../api/Services";
 import { useState, useEffect } from "react";
-import { key } from "../../api/Instances";
 
 // Interface pour typer les données de jeu
 interface Game {
@@ -17,13 +16,11 @@ export default function TrendingGames() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
-    console.log(key);
-
     useEffect(() => {
         const fetchTrendingGames = async () => {
             try {
                 setLoading(true);
-                const data = await getAll(`/games?key=${key}`);
+                const data = await getAll("/games");
                 // RAWG API retourne les jeux dans data.results
                 if (data && data.results) {
                     setTrendingGames(data.results);
@@ -64,7 +61,27 @@ export default function TrendingGames() {
                     <a href="/trending" className="see-more-link">See More</a>
                 </div>
                 <div className="trending-cards">
-                    <p>Erreur: {error}</p>
+                    <div style={{ 
+                        padding: '20px', 
+                        textAlign: 'center', 
+                        color: '#666',
+                        backgroundColor: '#f8f9fa',
+                        borderRadius: '8px',
+                        border: '1px solid #e9ecef'
+                    }}>
+                        <p style={{ margin: '0 0 10px 0', fontWeight: 'bold' }}>
+                            ⚠️ Erreur de configuration
+                        </p>
+                        <p style={{ margin: '0 0 10px 0', fontSize: '14px' }}>
+                            {error.includes('Clé API RAWG manquante') 
+                                ? 'Clé API manquante. Vérifiez votre fichier .env'
+                                : error
+                            }
+                        </p>
+                        <p style={{ margin: '0', fontSize: '12px', color: '#999' }}>
+                            Vérifiez la console pour plus de détails
+                        </p>
+                    </div>
                 </div>
             </div>
         );
