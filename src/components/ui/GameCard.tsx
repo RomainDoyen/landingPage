@@ -1,4 +1,4 @@
-import "../../styles/GameCard.css"
+import "../../styles/components/GameCard.css"
 import Image from "./Image"
 import type { GameCardProps } from "../../types/types";
 

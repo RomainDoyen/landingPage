@@ -1,4 +1,4 @@
-import "../../styles/Input.css"
+import "../../styles/components/Input.css"
 import type { InputProps } from "../../types/types";
 
 export default function Input({

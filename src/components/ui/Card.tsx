@@ -1,4 +1,4 @@
-import "../../styles/Card.css"
+import "../../styles/components/Card.css"
 import Image from "./Image"
 import type { CardProps } from "../../types/types";
 

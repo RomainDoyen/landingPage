@@ -1,7 +1,7 @@
 import Header from "../components/ui/Header";
 import BannerWelcome from "../components/ui/BannerWelcome";
 import TrendingGames from "../components/ui/TrendingGames";
-import "../styles/Home.css";
+import "../styles/pages/Home.css";
 import Footer from "../components/ui/Footer";
 
 export default function Home() {

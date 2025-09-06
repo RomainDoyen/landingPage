@@ -1,4 +1,4 @@
-import '../../styles/Spinner.css';
+import '../../styles/components/Spinner.css';
 import type { SpinnerProps } from "../../types/types";
 
 export default function Spinner({ size = 'medium', color = '#007bff' }: SpinnerProps) {

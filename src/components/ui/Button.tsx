@@ -1,4 +1,4 @@
-import "../../styles/Button.css"
+import "../../styles/components/Button.css"
 
 import type { ButtonProps } from "../../types/types";
 

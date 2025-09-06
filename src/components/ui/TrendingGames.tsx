@@ -1,4 +1,4 @@
-import "../../styles/TrendingGames.css"
+import "../../styles/components/TrendingGames.css"
 import GameCard from "./Card"
 import { getAll } from "../../api/Services";
 import { useState, useEffect } from "react";

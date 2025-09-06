@@ -1,16 +1,19 @@
 import Header from "../components/ui/Header";
-// import BannerWelcome from "../components/ui/BannerWelcome";
-import TrendingGames from "../components/ui/TrendingGames";
-import "../styles/Home.css";
+import "../styles/pages/Games.css";
+import Footer from "../components/ui/Footer";
+import AllGames from "../components/ui/AllGames";
 
-export default function Home() {
+export default function Games() {
     return (
         <div className="gamesPage-container">
             <div className="gamesPage-content">
                <Header /> 
             </div>
             <div className="gamesPage-cards">
-                <TrendingGames />
+                <AllGames />
+            </div>
+            <div className="gamesPage-footer">
+                <Footer />
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import banner from "../../assets/banner.png"
-import "../../styles/Header.css"
+import "../../styles/components/Header.css"
 import Input from "./Input"
 import { SearchIcon } from "lucide-react"
 import Image from "./Image"

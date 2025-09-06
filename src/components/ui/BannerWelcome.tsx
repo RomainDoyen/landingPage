@@ -1,4 +1,4 @@
-import "../../styles/BannerWelcome.css"
+import "../../styles/components/BannerWelcome.css"
 import Button from "./Button"
 import Compteur from "./Compteur"
 
@@ -15,7 +15,7 @@ export default function BannerWelcome() {
                 <Compteur title="Lists" value={526} valueMetrics="K" pastilleColor="#EA4747" />
             </div>
             <div className="banner-welcome-button">
-                <Button text="Create a free account" color="#ffffff" backgroundColor="#EA377A" link="/signup" />
+                <Button text="Create a free account" color="#ffffff" backgroundColor="#008AC0" link="/signup" />
                 <p>or <a href="/login" className="banner-welcome-button-link">log in</a> if you have an account</p>
             </div>
         </div>
