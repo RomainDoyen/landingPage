@@ -3,7 +3,7 @@
     background-color: transparent;
     z-index: 1;
     position: absolute;
-    top: 90px;
+    top: 150px;
 }
 
 .banner-welcome h1 {
@@ -13,6 +13,8 @@
     width: 500px;
     line-height: 1;
     text-transform: uppercase;
+    font-family: 'Bungee', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .banner-welcome h5 {

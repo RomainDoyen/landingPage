@@ -1,9 +1,10 @@
-import banner from "../../assets/banner.png"
+import banner from "../../assets/images/banner.png"
 import "../../styles/components/Header.css"
 import Input from "./Input"
 import { SearchIcon } from "lucide-react"
 import Image from "./Image"
 import { Link } from 'react-router-dom'
+import logo from "../../assets/images/logo-apex.png"
 
 export default function Header() {
     return (
@@ -14,7 +15,9 @@ export default function Header() {
                 </div>
                 <nav className="nav-container">
                     <div className="site-title">
-                        <Link to="/">Backlog974</Link> 
+                        <Link to="/">
+                            <Image src={logo} alt="Logo" />
+                        </Link> 
                       </div>
                     <div className="nav-links">
                         <a href="#">Login</a>

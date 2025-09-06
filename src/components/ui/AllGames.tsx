@@ -46,7 +46,13 @@ export default function AllGames() {
     };
 
     if (loading) {
-        return <Spinner />;
+        return (
+            <div className="all-games-container">
+                <div className="loading-container">
+                    <Spinner size="large" color="#008AC0" />
+                </div>
+            </div>
+        );
     }
 
     if (error) {
