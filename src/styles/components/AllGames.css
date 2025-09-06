@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    min-height: 800px;
     width: 100%;
 }
 
@@ -39,4 +39,26 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
+}
+
+.no-games-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    text-align: center;
+}
+
+.no-games-message h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Bungee', sans-serif;
+}
+
+.no-games-message p {
+    color: #7E8A94;
+    font-size: 1.1rem;
+    margin: 0;
 }
